@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    /* ===== Reset & Base Styles ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      background-color: #222;
+      color: #222;
+      line-height: 1.6;
+      transition: background 0.3s, color 0.3s;
+    }
+body {
+  background-color: #87ceeb; /* Sky Blue */
+  color: ;
+  line-height: 1.6;
+  transition: background 0.3s,color 0.3s;
+}
+body.light {
+  background-color: #222; /* White */
+  color: #ffff;
+}
+    /* ===== Header ===== */
+    header {
+      background: #ffff;
+      padding: 1em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+    }
+    header nav a {
+      margin-left: 1em;
+      font-weight: bold;
+    }
+
+    /* ===== Sections ===== */
+    section {
+      padding: 3em 1.5em;
+      max-width: 900px;
+      margin: auto;
+    }
+    .hero {
+      text-align: center;
+      padding: 5em 1em;
+    }
+    .hero h1 {
+      font-size: 2.5em;
+      margin-bottom: 0.3em;
+    }
+
+
+    /* ===== project grid ===== */
+    .project {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5em;
+    }
+    .project-card {
+      background: #ffff;
+      padding: 1em;
+      border-radius: 10px;
+      transition: transform 0.2s;
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      text-align: center;
+      padding: 1em;
+      background: #ffff;
+      margin-top: 2em;
+    }
+  </style>
+</head>
+<body>
+  <!-- ===== Header ===== -->
+  <header>
+    <div class="logo">My Portfolio</div>
+    <nav>
+      <a href="#Home">Home</a>
+      <a href="#about">About</a>
+      <a href="#Education">Education</a>
+      <a href="#projects">project</a>
+      <a herf="#Skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ===== Hero Section ===== -->
+  <section class="hero">
+    <h1>Hello, I'm Deepika</h1>
+    <p>I'm studying BCA 2nd year from Arcot Sri Mahalakshmi Women's College</p>
+  </section>
+
+  <!-- ===== About Section ===== -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+     I am a BCA 2nd year student with strong interest in programming and creativity.I am a developer skilled in HTML, CSS, and JavaScript. I enjoy creating
+      responsive and user-friendly web applications.
+    </p>
+  </section>
+  <!-- ===== Education section ===== -->
+  <hr>
+<h3><u>My EDUCATION:</u></h3>
+<table border="3">
+<tr>
+<th>s.no</th>
+<th>degree</th>
+<th>institute name</th>
+<th>percentage</th>
+<th> passing year</th>
+</tr>
+<tr>
+<td>1</td>
+<td>higher secondary</td>
+<td> L.F.C </td>
+<td>85%</td>
+<td>2024</td>
+</tr>
+<tr>
+<td>2</td>
+<td>BCA</td>
+<td>Sri Mahalakshmi Womens college</td>
+<td>90%</td>
+<td>2026</td>
+</tr>
+</table>
+
+  <!-- ===== Projects Section ===== -->
+  <section id="Projects">
+    <h2>My Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>portfolio website</h3>
+        <p> This portfolio site built with HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="project-card">
+        <h3>Graphics and web design</h3>
+        <p>Web development refers to the creating,
+                            building, and maintaining
+                            of websites. It includes aspects such as
+                            web design, web publishing,
+                            web programming, and database management.
+                            It is the creation of an
+                            application that works over the internet
+                            i.e. websites.</p>
+      </div>
+<hr>
+ <section id="Skills">
+    <h4>My Skills:</h4>
+    <div class="Skills">
+      <div class="skills-card">
+<ul>
+<li>
+App&web </li>
+<li>c++ </li
+<li>java</li>
+<li>python</li>
+</ul>
+<p>
+                Our exceptional mentors hailing from top
+                colleges & organizations have the
+                ability to guide you on a journey from
+                the humble beginnings of coding to
+                the pinnacle of expertise. Under their
+                guidance watch your skills flourish
+                as we lay the foundation and help you
+                conquer the world of coding.
+            </p>
+        </div>
+
+  <!-- ===== Contact Section ===== -->
+    <section class="contact" id="contact">
+        <div class="contact-heading">
+            <h1 class="my-heading text-center">Contact Me</h1>
+        </div>
+        <div class="contact-content">
+            <div class="contact-form-container">
+                <h1 class="greet-heading">Get In Touch</h1>
+                <form class="contact-form">
+                    <input class="form-controls" type="text" placeholder="Your Name">
+                    <input class="form-controls" type="text" placeholder="Your Email">
+                    <input class="form-controls" type="text" placeholder="Your Phone">
+                    <textarea class="form-controls" placeholder="Write your message" name="message" id="" cols="30"
+                        rows="10">
+                      </textarea>
+                    <input class="form-btn btn common-btn" type="submit" value="Send Message">
+                </form>
+            </div>
+            <div class="contact-details">
+                <h1 class="greet-heading">My Contact Details</h1>
+                <div class="details">
+                    <h5 class="contact-heading">EMAIL</h5>
+                    <p class="contact-text">deepika@gmail.com</p>
+                </div>
+                <div class="details">
+                    <h5 class="contact-heading">PHONE</h5>
+                    <p class="contact-text">+91 0123456789</p>
+                </div>
+                <div class="details">
+                    <h5 class="contact-heading">FAX</h5>
+                    <p class="contact-text">+91 0123456789</p>
+                </div>
+                <div class="details">
+                    <h5 class="contact-heading">ADDRESS</h5>
+                    <p class="contact-text">ponnai main road, CA</p>
+                    <p>4th Floor8 Lower</p>
+                    <p>Malaimedu</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer section -->
+    <footer class="footer">
+        <div class="footer-content text-center">
+            <h4>
+                Copyright © 2023 All rights reserved |
+                This portfolio website template is created
+                by GeeksforGeeks.
+            </h4>
+            <div class="social-links">
+                <div class="footer-menu">
+                    <ul class="footer-menu-list">
+                        <li class="footer-list-items">
+                            <a class="footer-links" href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="footer-list-items">
+                            <a class="footer-links" href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="footer-list-items">
+                            <a class="footer-links" href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="footer-list-items">
+                            <a class="footer-links" href="#">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+        integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+    <script src="script.js"></script>
+</body>
+
+</html>section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <p>© 2025 Deepika</p>
+  </footer>
+
+  <!-- ===== JavaScript ===== -->
+  <script>
+    const toggleBtn = document.getElementById('themeToggle');
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('light');
+    });
+  </script>
+</body>
+</html>
